@@ -8,10 +8,13 @@ import { MenuPage } from "./components/MenuPage.js";
 import { DetailsPage } from "./components/DetailsPage.js";
 import { OrderPage } from "./components/OrderPage.js";
 import ProductItem from "./components/ProductItem.js";
+import CartItem from "./components/CartItem.js";
 
 window.app = {};
 app.store = Store;
 app.router = Router;
+
+customElements.define("order-page", OrderPage);
 
 window.addEventListener("DOMContentLoaded", () => {
   loadData();
